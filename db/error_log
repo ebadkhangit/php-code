@@ -1,0 +1,2 @@
+[17-Jul-2018 11:55:13 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'nensi_adotkatruc'@'localhost' to database 'adotkatruc' in /home/vishalraman/public_html/winwinwebsite.com/adotkatrucks/db/config.php on line 14
+[17-Jul-2018 11:55:13 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/vishalraman/public_html/winwinwebsite.com/adotkatrucks/db/config.php on line 17

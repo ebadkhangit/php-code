@@ -42,3 +42,38 @@ RewriteRule ^(.*)\.php $1.html [R=301,L]
 RewriteCond %{THE_REQUEST} (.*)\.html  
 RewriteRule ^(.*)\.html $1.php [L]
 
+//  search bar code
+
+ <form method="post">
+      <div class="serach_box input-group">
+        <input type="text" class="form-control" placeholder="Search text"  name="searchProduct" onkeyup="search_product(this.value)">
+        
+      <span class="input-group-btn">
+          <input  type="submit" id="search"  name="searchPro">
+       
+       </span>
+       
+     <div  id="viewSearchData" style="background-color:#fff;color:#000; margin-top:56px;position:absolute;font-size:13px !important; padding: 0px; width:84%; left:1px;"></div>
+
+    </div>
+    </form>
+
+
+<!--	 <?php
+            if(isset($_POST['searchPro'])){
+            $searchProduct =$_POST['searchProduct'];
+            
+             $query_searchPro = "select product_id from product where product_title = '$searchProduct' ";
+ $query_ProductsPro = mysqli_query($conn,$query_searchPro);
+ $arr_productPro =  mysqli_fetch_array($query_ProductsPro );
+ 
+ $psSearchid=$arr_productPro['product_id'];
+ if($psSearchid!=""){
+ $urlsearch="product-description.php?prdid=".$psSearchid;
+ echo "<script>window.location.href='$urlsearch'</script>";
+ }else{
+  echo "<script>alert('Please enter correct product name/title');</script>";
+ }
+            
+            }
+            ?> -->
